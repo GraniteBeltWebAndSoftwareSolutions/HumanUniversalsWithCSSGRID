@@ -1,0 +1,106 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Page Title</title>
+
+
+<style>
+
+body{
+	background-color: black;
+	color: white;
+	}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+	font-size: 3em;
+}
+
+h1{
+	text-align:center;
+
+}
+h2{
+	text-align: center;
+	}
+</style>
+</head>
+<body>
+
+
+
+
+<div class="grid">
+  <div id="demo2"></div>
+  <div id="demo3"></div>
+  <div id="demo4"></div>
+  <div id="demo5"><button type="button"onclick="ran()">
+Click me to get a random Human Universal</button></div>
+  <div id="demo6"><button type="button"onclick="ran2()">
+Click me to get a random Human Universal</button></div>
+  <div id="demo7"><button type="button"onclick="ran3()">
+Click me to get a random Human Universal</button></div>
+  
+</div>
+
+
+
+<div id='demo1'>
+</div>
+
+
+
+
+
+
+
+
+</body>
+<script>
+const HumanUniversals = ['age-grading', 'athletic sports', 'bodily adornment', 'calendar', 'cleanliness training', 'community organization', 'cooking', 'cooperative labor', 'cosmology', 'courtship', 'dancing', 'decorative art', 'divination', 'division of labor', 'dream interpretation', 'education', 'eschatology', 'ethics', 'ethno-botany', 'etiquette', 'faith healing', 'family feasting', 'fire-making', 'folklore', 'food taboos', 'funeral rites', 'games', 'gestures', 'gift-giving', 'government', 'greetings', 'hair styles', 'hospitality', 'housing', 'hygiene', 'incest taboos', 'inheritance rules', 'joking', 'kin groups', 'kinship nomenclature', 'language', 'law', 'luck superstitions', 'magic', 'marriage', 'mealtimes', 'medicine', 'obstetrics', 'penal sanctions', 'personal names', 'population policy', 'postnatal care', 'pregnancy usages', 'property rights', 'propitiation of supernatural beings', 'puberty customs', 'religious ritual', 'residence rules', 'sexual restrictions', 'soul concepts', 'status differentiation', 'surgery', 'tool-making', 'trade', 'visiting', 'weather control', 'weaving'];
+
+
+
+
+document.write('<h1>Press the button above to get a random selection</h1>');
+for (index in HumanUniversals){
+	document.write('<h2>' + HumanUniversals[index] + '</h2>');
+
+	
+}
+
+function ran(){
+	var ran = Math.floor((Math.random() * 66) + 1);
+	document.getElementById('demo2').innerHTML = HumanUniversals[ran];
+
+}
+
+function ran2(){
+	var ran = Math.floor((Math.random() * 66) + 1);
+	document.getElementById('demo3').innerHTML = HumanUniversals[ran];
+
+}
+
+function ran3(){
+	var ran = Math.floor((Math.random() * 66) + 1);
+	document.getElementById('demo4').innerHTML = HumanUniversals[ran];
+
+}
+
+
+
+</script>
+
+
+
+
+
+
+
+</html>
